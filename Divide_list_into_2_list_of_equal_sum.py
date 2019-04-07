@@ -9,13 +9,17 @@ list2=sorted(list1)
 list_sum=sum(list2)
 sum2=list_sum//2
 list2=list2[::-1]
+list3=list(list2)
 sum3=[]
 for i in range(len(list2)):
 	sum3.append(list2[i])
+	list3.remove(list2[i])
 	s=sum(sum3)
 	if(s==sum2):
-		print(sum3)
+		print(sorted(sum3))
+		print(sorted(list3))
 		break
 	if(s>sum2):
 		sum3.remove(list2[i])
-		continue
+		list3.append(list2[i])
+
