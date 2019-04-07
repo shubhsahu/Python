@@ -11,6 +11,7 @@ sum2=list_sum//2
 list2=list2[::-1]
 list3=list(list2)
 sum3=[]
+counter=0
 for i in range(len(list2)):
 	sum3.append(list2[i])
 	list3.remove(list2[i])
@@ -18,8 +19,10 @@ for i in range(len(list2)):
 	if(s==sum2):
 		print(sorted(sum3))
 		print(sorted(list3))
+		counter=1
 		break
 	if(s>sum2):
 		sum3.remove(list2[i])
 		list3.append(list2[i])
-
+if(counter==0):
+	print('No such division possible')
