@@ -1,3 +1,6 @@
+'''
+Take 2 words from user and check how many elements have to be removed from both words to make them both anagram of each other
+'''
 first=input('Please enter the first word: ').upper()
 first_split=list(first)
 second=input('Please enter the second word: ').upper()
