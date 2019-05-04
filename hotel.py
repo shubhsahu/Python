@@ -1,6 +1,6 @@
 '''
 Requirement -> To develop a kiosk system for a hotel which will display a configurable menu, ask for order, check for correct entries, 
-suggest various combination of food items, ask for quantity and finally print the order summary and bill.
+suggest various combination of food items, ask for quantity and finally print the order summary and bill. 
 Note: If this code is downloaded from Git, please reconfigure the menu.py path on line 8 accordingly.
 '''
 import configparser
